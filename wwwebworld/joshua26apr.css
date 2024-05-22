@@ -1,0 +1,339 @@
+html {
+    background-color: gold;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 87%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-banner {
+    position: relative;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.banner-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 25px;
+}
+
+.banner-caption p {
+    color: red;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../CCA/images/dancpeterdance.webp) left bottom repeat-x, cornsilk url(../CCA/images/dancpeterdance.webp) left top repeat-x;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/*media query*/
+@media screen and (max-width:480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+/*end of media query*/
+.box1 {
+    background: url(../CCA/images/Ccra8e5.gif) no-repeat center;
+    background-size: cover;
+}
+
+/*form styles*/
+form {
+    background-color: cornsilk;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="email"], input[type="password"], select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+}
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: gold;
+    color: antiquewhite;
+    padding: 10px 0;
+    border: 1px solid orangered;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover
+input[type="submit"]:focus {
+    border: 1px solid cornsilk;
+    background-color: orangered;
+}
+/*end of form*/
+/*tables*/
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+    background-color: gold;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.4);
+}
+
+table th, table td {
+    border: 1px solid gold;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(evem) td {
+    background-color: antiquewhite;
+}
+
+table tbody tr:nth-child(2),table tbody tr:nth-child(3),
+table tbody tr:nth-child(2),table tbody tr:nth-child(3) {
+    text-align: center;
+}
+
+.col-fave {
+    width: 60%;
+}
+
+.col_P, .col-Q {
+    width: 20%;
+}
+/*end of tables*/
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: goldenrod;
+}
+
+/*typography*/
+header h1 {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 165%;
+    font-style: normal;
+    letter-spacing: 4px;
+    text-shadow: 2px 10px 1px #999;
+}
+
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: yellow;
+}
+
+header p a {
+    text-decoration: none;
+}
+
+.p1 p {
+    margin-top: 10px;
+    text-indent: 25px;
+    color: gray;
+}
+/*end of typography*/
+.content-area {
+    background-color: antiquewhite;
+    border-top: 3px solid cornsilk;
+    border-bottom: 3px solid cornsilk;
+}
+
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding-top: 20px;
+    }
+}
+
+.main {
+    width:70%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.info-box {
+    background-color:antiquewhite;
+    border:5px solid aliceblue;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-with: 480p) {
+    .hide-small {
+        display: none;
+    }
+}
+
+.support {
+    position: relative;
+    width: 30%;
+    float: left;
+    background-image: linear-gradient(to bottom, cornsilk, antiquewhite);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 9;
+}
+
+.fix {
+    clear: both;
+}
+
+@media screen and (max-width: 700px) {
+    .main,
+    .support {
+        width:auto;
+        float: none;
+    }
+
+    .main {
+        padding-right: 0;
+    }
+}
+
+p {
+    color:gray;
+}
+
+footer p {
+    color: darkred;
+    text-align: center;
+    font-size: 85%;
+    color:#999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    font-size: 165%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header p {
+    color:chocolate;
+}
+
+
+header p span {
+    color:maroon;
+}
+
+.highlight {
+    color: firebrick;
+    background-color: orange;
+}
+
+.brand-color {
+    color: orange;
+    background-color: maroon;
+}
+/*site navigation*/
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav a {
+    text-decoration: none;
+    color: goldenrod;
+    padding: 10px 20px;
+    border: 3px solid cornsilk;
+    display: block;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color:cornsilk;
+}
+/*end of site navigation*/
+@media screen and (max-width:700px) {
+    .site-nav li {
+        width: 50%;
+        margin-right: 0;
+    }
+
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid cornsilk;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav li {
+        width: 70%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid cornsilk;
+    }
+}
